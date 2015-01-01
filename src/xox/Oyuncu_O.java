@@ -8,16 +8,16 @@ public class Oyuncu_O extends Oyuncu
 		alan[x][y] = 'O';
 		int oyna[]=new int[4];
 		int oyna2[]=new int[4];
-		int kazandý = 0;
+		int kazandi = 0;
 		
-		//sað çapraz
+		//sag Ã§apraz
 		for(int i =1;i<4;i++)
 		{
 			if(alan[i][i] == 'O')
 				oyna[0]++;
 		}
 
-		//sol çapraz
+		//sol Ã§apraz
 		int a = 3;
 		for(int b = 1;b<4;b++)
 		{
@@ -54,11 +54,11 @@ public class Oyuncu_O extends Oyuncu
 		{
 			if(oyna[i] == 3 || oyna2[i] == 3)
 			{
-				kazandý = 1;
+				kazandi = 1;
 			}
 		}
 		
-		if(kazandý == 1)
+		if(kazandi == 1)
 		{
 			Oyuncu.donguBreak = 1;
 			System.out.println();
